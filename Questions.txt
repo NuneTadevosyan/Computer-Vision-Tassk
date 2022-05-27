@@ -1,0 +1,8 @@
+Task 4
+
+First approach is slow as the third one because they iterate over all the pixels. DBSCAN algorithm works better than KMEANs as it divides into as much clusers as are needed, meanwhile to see all the power of KMEANS need to give right K value.
+OpenCV algorithms work fast but I couldnt make it work for given image, I think more investigation would help understanding its behaviour and for which I did not have time because of my upcoming exams.
+
+Task 5
+ 
+Dividing image into parts will work for the first task solution as we preserve coordinates and colors separetly. For the third one also will work because encoder and decoder of an image are alike. For the second one wont work as opencv work on the whole image and finds contours for that. I would make it white and black and after that run kernel and do max pooling with strides, or will count mean of every 4 pixel and take that as an one. But first I will try resize function provided by the libraries.
